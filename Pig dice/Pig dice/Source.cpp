@@ -14,23 +14,22 @@ int main()
 	int userChoice;
 	int userChoice2;
 	double scores[5] = { lyingPig, razorBack, trotter, snouter, leaningJowler };
+	
 
-	cout << "Welcome to pig dice! would you like to play? 1 for yes 2 for no";
+	cout << "Welcome to pig dice! would you like to play? 1 for Singles 2 for Doubles(Not working) : ";
 	cin >> userChoice;
 	
 	if (userChoice == 1)
 	{
-		cout << "Are you ready? 1 for yes and 2 for no ";
+		cout << "Are you ready? 1 for Yes 2 for No ";
 		cin >> userChoice2;
 	}
 	else if (userChoice == 2)
 	{
-		cout << "Goodbye";
+		cout << "Not ready yet go away" << endl;
 	}
-	else 
-	{
-		cout << "Invalid";
-	}
+
+	
 	/*level1();*/
 
 	system("pause");
