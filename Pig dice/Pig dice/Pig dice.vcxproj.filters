@@ -18,7 +18,7 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="level1.cpp">
+    <ClCompile Include="Score.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
