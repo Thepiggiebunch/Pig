@@ -1,0 +1,5 @@
+﻿  Source.cpp
+c:\users\kg154824\source\repos\pig dice\pig dice\source.cpp(10): warning C4101: 'razorBack': unreferenced local variable
+c:\users\kg154824\source\repos\pig dice\pig dice\source.cpp(9): warning C4101: 'lyingPig': unreferenced local variable
+c:\users\kg154824\source\repos\pig dice\pig dice\source.cpp(11): warning C4101: 'trotter': unreferenced local variable
+  Pig dice.vcxproj -> C:\Users\kg154824\source\repos\Pig dice\Debug\Pig dice.exe
