@@ -3,17 +3,33 @@
 #include <algorithm>
 using namespace std;
 
-
-int main()
-{
+int fullGame()
+	{
 	int lyingPig = 0;
 	int razorBack = 5;
 	int trotter = 5;
 	int snouter = 10;
 	int leaningJowler = 15;
+	double scores[5] = { lyingPig, razorBack, trotter, snouter, leaningJowler };
+
+	
+	system("pause");
+	return 0;
+
+
+}
+
+
+
+
+
+
+
+int main()
+{
 	int userChoice;
 	int userChoice2;
-	double scores[5] = { lyingPig, razorBack, trotter, snouter, leaningJowler };
+	
 	
 
 	cout << "Welcome to pig dice! would you like to play? 1 for Singles 2 for Doubles(Not working) : ";
@@ -28,7 +44,12 @@ int main()
 	{
 		cout << "Not ready yet go away" << endl;
 	}
+	else if (userChoice2 == 1)
+	{
+		fullGame();
+	}
 
+	
 	
 	/*level1();*/
 
