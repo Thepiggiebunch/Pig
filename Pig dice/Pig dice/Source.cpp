@@ -18,26 +18,11 @@ int fullGame()
 
 		cout << randomNum;
 
-
-
-	
-	
-	
-	
-	
-	
 	system("pause");
 	return 0;
 
 
 }
-
-
-
-
-
-
-
 int main()
 {
 	int userChoice;
