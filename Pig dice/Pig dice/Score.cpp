@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <time.h>
 using namespace std;
 
 void Score()
@@ -15,9 +16,12 @@ void Score()
 	int trotter = 3;
 	int snouter = 4;
 	int leaningJowle = 5;
-	int pigFace = 0;
+	int pigFace;
 	
-
+	
+	srand(time(NULL));
+	pigFace = rand() % 5 + 1;
+	
 
 	if (pigFace = lyingPig) 
 	{
