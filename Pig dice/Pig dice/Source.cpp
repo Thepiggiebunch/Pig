@@ -2,6 +2,7 @@
 #include <string>
 #include <algorithm>
 #include <time.h>
+#include "Header.h"
 using namespace std;
 
 int fullGame()
@@ -9,7 +10,7 @@ int fullGame()
 
 	int randomNum;
 	int choice;
-
+	
 
 	srand(time(NULL));
 	randomNum = rand() % 6 + 1;
