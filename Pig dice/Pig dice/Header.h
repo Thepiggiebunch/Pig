@@ -1,6 +1,6 @@
 #ifndef Bridge
 #define Bridge
 
-int main();
+int randomNum;
 
 #endif // !Bridge

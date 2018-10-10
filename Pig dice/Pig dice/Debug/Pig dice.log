@@ -1,6 +1,3 @@
 ﻿  Score.cpp
-c:\users\ab137112\desktop\c++\pig\pig dice\pig dice\score.cpp(20): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\ab137112\desktop\c++\pig\pig dice\pig dice\score.cpp(13): warning C4101: 'Turns': unreferenced local variable
-c:\users\ab137112\desktop\c++\pig\pig dice\pig dice\score.cpp(11): warning C4101: 'ComputerScore': unreferenced local variable
-c:\users\ab137112\desktop\c++\pig\pig dice\pig dice\score.cpp(12): warning C4101: 'FinalScore': unreferenced local variable
-c:\users\ab137112\desktop\c++\pig\pig dice\pig dice\score.cpp(26): error C4700: uninitialized local variable 'PlayerScore' used
+Source.obj : error LNK2005: "int randomNum" (?randomNum@@3HA) already defined in Score.obj
+C:\Users\ab137112\Desktop\C++\Pig\Pig dice\Debug\Pig dice.exe : fatal error LNK1169: one or more multiply defined symbols found
