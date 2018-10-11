@@ -1,15 +1,18 @@
 #include <iostream>
 #include <string>
+#include "Header.h"
+#define HEADER_H_
 #include <algorithm>
 using namespace std;
 
-void Score()
+
+int score()
 {
 	
-	int PlayerScore;
-	int ComputerScore;
+	int PlayerScore = 0;
+	/*int ComputerScore;
 	int FinalScore;
-	int Turns;
+	int Turns;*/
 	int lyingPig = 1;
 	int razorBack = 2;
 	int trotter = 3;
@@ -58,5 +61,5 @@ void Score()
 
 
 	system("pause");
-	
+	return 0;
 }
