@@ -50,7 +50,7 @@ int main()
 
 
 		srand(time(NULL));
-	randomNum = rand() % 6 + 1;
+	randomNum = rand() %  6 + 1;
 	cout << "Press 1 to roll dice: ";
 	cin >> choice;
 
