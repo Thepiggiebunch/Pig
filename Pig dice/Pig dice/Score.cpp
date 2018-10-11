@@ -17,37 +17,37 @@ void Score()
 	int trotter = 3;
 	int snouter = 4;
 	int leaningJowle = 5;
-	int randomNum;
+	int PigFace;
 
 	
 
 
-			if (randomNum = lyingPig)
+			if (PigFace = lyingPig)
 			{
 				PlayerScore = PlayerScore + 0;
 				cout << "You get 0 points\n";
 				cout << "Your Score is " << PlayerScore << endl;
 			}
-			else if (randomNum = razorBack)
+			else if (PigFace = razorBack)
 			{
 				PlayerScore = PlayerScore + 5;
 				cout << "You get 5 points\n";
 				cout << "Your Score is " << PlayerScore << endl;
 			}
-			else if (randomNum = trotter)
+			else if (PigFace = trotter)
 			{
 				PlayerScore = PlayerScore + 5;
 				cout << "You get 5 points\n";
 				cout << "Your Score is " << PlayerScore << endl;
 			}
-			else if (randomNum = snouter)
+			else if (PigFace = snouter)
 			{
 				PlayerScore = PlayerScore + 10;
 				cout << "You get 10 points\n";
 				cout << "Your Score is " << PlayerScore << endl;
 			}
 
-			else if (randomNum = leaningJowle)
+			else if (PigFace = leaningJowle)
 			{
 				PlayerScore = PlayerScore + 15;
 				cout << "You get 15 points\n";
