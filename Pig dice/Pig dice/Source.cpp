@@ -2,34 +2,36 @@
 #include <string>
 #include <algorithm>
 #include <time.h>
+#define HEADER_H_
 #include "Header.h"
 using namespace std;
 
-int fullGame()
-{
-
-	int randomNum;
-	int choice;
-	
-
-	srand(time(NULL));
-	randomNum = rand() % 6 + 1;
-	cout << "Press 1 to roll dice: ";
-	cin >> choice;
-
-	cout << randomNum;
-
-	system("pause");
-	return 0;
-
-
-}
+//int fullGame()
+//{
+//
+//	int randomNum;
+//	int choice;
+//
+//
+//	srand(time(NULL));
+//	randomNum = rand() % 6 + 1;
+//	cout << "Press 1 to roll dice: ";
+//	cin >> choice;
+//
+//	cout << randomNum;
+//
+//	system("pause");
+//	return 0;
+//
+//
+//}
 int main()
 {
 	int userChoice;
 	int userChoice2;
 	int randomNum;
 	int choice;
+	int compNum;
 
 
 	cout << "Welcome to pig dice! would you like to play? 1 for Singles 2 for Doubles(Not working) : ";
@@ -45,17 +47,32 @@ int main()
 		cout << "Not ready yet go away" << endl;
 	}
 	else if (userChoice2 == 1)
-	{
-		fullGame();
-	}
 
 
-	srand(time(NULL));
+		srand(time(NULL));
 	randomNum = rand() % 6 + 1;
 	cout << "Press 1 to roll dice: ";
 	cin >> choice;
 
-	cout << randomNum;
+
+	srand(time(NULL));
+	compNum = rand() % 6 + 1;
+	cout << "Computers number is: " << compNum << endl;
+	cout << "Your number is:" << randomNum << endl;
+
+	if (randomNum > compNum)
+	{
+		cout << "You go first!" << endl;
+	}
+
+	else if (compNum > randomNum)
+	{
+		cout << "Computer goes first!" << endl;
+	}
+	else if (compNum == randomNum)
+	{
+		cout << "You tied go again!";
+	}
 
 
 	/*level1();*/
