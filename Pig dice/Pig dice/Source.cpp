@@ -26,7 +26,7 @@ using namespace std;
 //
 //
 //}
-int main()
+int somethingelse()
 {
 	int userChoice;
 	int userChoice2;
@@ -74,8 +74,9 @@ int main()
 	{
 		cout << "You tied go again!";
 	}
-	else if ()
-	/*level1();*/
+	
+
+
 
 	system("pause");
 	return 0;
