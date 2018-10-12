@@ -4,6 +4,7 @@
 #include <time.h>
 #define HEADER_H_
 #include "Header.h"
+#include <SFML/Graphics.hpp>
 using namespace std;
 
 //int fullGame()
@@ -73,8 +74,7 @@ int main()
 	{
 		cout << "You tied go again!";
 	}
-
-
+	else if ()
 	/*level1();*/
 
 	system("pause");
