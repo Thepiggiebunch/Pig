@@ -3,9 +3,10 @@
 #include <algorithm>
 #include <time.h>
 #include "Header.h"
+#include <SFML/Graphics.hpp>
 using namespace std;
 
-void Score()
+int Score()
 {
 
 	int PlayerScore = 0;
@@ -30,6 +31,29 @@ void Score()
 		PlayerScore = PlayerScore + 0;
 		cout << "You get 0 points\n";
 		cout << "Your Score is " << PlayerScore << endl;
+		
+		sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
+
+
+		sf::Texture imageSource;
+		if (!imageSource.loadFromFile("graphics/pig test.jpg"))
+			return EXIT_FAILURE;
+		sf::Sprite imageSprite;
+		imageSprite.setTexture(imageSource);
+
+		while (window.isOpen())
+		{
+			sf::Event event;
+			while (window.pollEvent(event))
+			{
+
+
+			}
+
+			window.draw(imageSprite);
+			window.display();
+		}
+		return EXIT_SUCCESS;
 	}
 	else if (Face = size(PigFace[1]))
 	{
