@@ -139,7 +139,7 @@ int Score()
 		}
 		return EXIT_SUCCESS;
 	}
-
+	// hi
 	else if (Face = size(PigFace[4]))
 	{
 		PlayerScore = PlayerScore + 15;
