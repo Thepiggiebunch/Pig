@@ -1,10 +1,4 @@
-﻿  Full game.cpp
-  Score.cpp
-c:\users\ab137112\desktop\c++\pig\pig dice\pig dice\score.cpp(25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Source.cpp
-c:\users\ab137112\desktop\c++\pig\pig dice\pig dice\source.cpp(55): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Source1.cpp
-  Generating Code...
-c:\users\ab137112\desktop\c++\pig\pig dice\pig dice\score.cpp(92): warning C4715: 'Score': not all control paths return a value
-  LINK : C:\Users\ab137112\Desktop\C++\Pig\Pig dice\Debug\Pig dice.exe not found or not built by the last incremental link; performing full link
-  Pig dice.vcxproj -> C:\Users\ab137112\Desktop\C++\Pig\Pig dice\Debug\Pig dice.exe
+﻿  Source.cpp
+c:\users\kg154824\desktop\pig\pig dice\pig dice\source.cpp(79): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\kg154824\desktop\pig\pig dice\pig dice\source.cpp(43): warning C4101: 'choice': unreferenced local variable
+  Pig dice.vcxproj -> C:\Users\kg154824\Desktop\Pig\Pig dice\Debug\Pig dice.exe
