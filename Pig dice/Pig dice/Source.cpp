@@ -26,7 +26,7 @@ using namespace std;
 //
 //
 //}
-int somethingelse()
+int main()
 {
 	int userChoice;
 	int userChoice2;
@@ -48,24 +48,20 @@ int somethingelse()
 		cout << "Not ready yet go away" << endl;
 	}
 	else if (userChoice2 == 1)
-
-
+	{
+		cout << "Press 1 to roll dice: ";
+		cin >> choice;
+	}
 		srand(time(NULL));
-	randomNum = rand() %  6 + 1;
-	cout << "Press 1 to roll dice: ";
-	cin >> choice;
-
-
-	srand(time(NULL));
-	compNum = rand() % 6 + 1;
-	cout << "Computers number is: " << compNum << endl;
-	cout << "Your number is:" << randomNum << endl;
+		randomNum = rand() % 6 + 1;
+		compNum = rand() % 6 + 1;
+		cout << "Computers number is: " << compNum << endl;
+		cout << "Your number is:" << randomNum << endl;
 
 	if (randomNum > compNum)
 	{
 		cout << "You go first!" << endl;
 	}
-
 	else if (compNum > randomNum)
 	{
 		cout << "Computer goes first!" << endl;

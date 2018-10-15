@@ -1,1 +1,6 @@
-﻿  Pig dice.vcxproj -> C:\Users\kg154824\Desktop\Pig\Pig dice\Debug\Pig dice.exe
+﻿  Score.cpp
+c:\users\kg154824\desktop\pig\pig dice\pig dice\score.cpp(24): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Source.cpp
+c:\users\kg154824\desktop\pig\pig dice\pig dice\source.cpp(55): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  Pig dice.vcxproj -> C:\Users\kg154824\Desktop\Pig\Pig dice\Debug\Pig dice.exe
