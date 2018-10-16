@@ -42,30 +42,16 @@ int Score()
 	int randomNum;
 	int choice;
 	int compNum;
-	string lyingPig;
-	string razorBack;
-	string trotter;
-	string snouter;
-	string leaningJowle;
-	string PigFace[5] = { lyingPig, razorBack ,trotter ,snouter ,leaningJowle };
-	
-
-	/*srand(time(NULL));
-	PigFace[5] = rand() % 6 + 1;*/ 
-	
-	/*if (userChoice == 1)
-	{
-		cout << "Are you ready? 1 for Yes 2 for No ";
-		cin >> userChoice2;
-	}
-	else if (userChoice == 2)
-	{
-		cout << "Not ready yet go away" << endl;
-	}*/
+	int lyingPig = 0;
+	int razorBack = 5;
+	int trotter = 5;
+	int snouter = 10;
+	int leaningJowle = 15;
+	string piggie;
+	string PigFace[5] = { "lyingPig", "razorBack" ,"trotter" ,"snouter" ,"leaningJowle" };
 	
 	cout << "Are you ready to roll the dice? 1 for yes and 2 for no" << endl;
 	cin >> userChoice2;
-	
 	
 	if (userChoice2 == 1)
 	{
@@ -79,10 +65,10 @@ int Score()
 	 srand(time(NULL));
 	randomNum = rand() % 6 + 1;
 	compNum = rand() % 6 + 1;
-	cout << "Computers number is: " << compNum << endl;
 	cout << "Your number is:" << randomNum << endl;
+	cout << "Computers number is: " << compNum << endl;
 
-	if (randomNum > compNum)
+	 if (randomNum > compNum)
 	{
 		cout << "You go first!" << endl;
 		int score();
@@ -96,151 +82,165 @@ int Score()
 	{
 		cout << "You tied go again!";
 	}
-	else if (Face = size(PigFace[0]))
-	{
-		PlayerScore = PlayerScore + 0;
-		cout << "You get 0 points\n";
-		cout << "Your Score is " << PlayerScore << endl;
+	
+	 do {
+		 if (size(PigFace[0]) == )
+		 {
+			 PlayerScore = PlayerScore + 0;
+			 cout << "You get 0 points\n";
+			 cout << "Your Score is " << PlayerScore << endl;
 
-		sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
-
-
-		sf::Texture imageSource;
-		if (!imageSource.loadFromFile("graphics/lying.PNG"))
-			return EXIT_FAILURE;
-		sf::Sprite imageSprite;
-		imageSprite.setTexture(imageSource);
-
-		while (window.isOpen())
-		{
-			sf::Event event;
-			while (window.pollEvent(event))
-			{
-
-
-			}
-
-			window.draw(imageSprite);
-			window.display();
-		}
-		return EXIT_SUCCESS;
-	}
-	else if (Face = size(PigFace[1]))
-	{
-		PlayerScore = PlayerScore + 5;
-		cout << "You get 5 points\n";
-		cout << "Your Score is " << PlayerScore << endl;
-		sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
+			 sf::Event event;
+			 while (window.pollEvent(event))
+			 {
+				 if (event.type == sf::Event::Closed)
+					 window.close();
+				 else if (event.type == sf::Event::KeyPressed)
+				 {
+					 if (event.key.code == sf::Keyboard::Key::Escape)
+						 window.close();
+					 // ... etc ...
+				 
+			
+			 sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
 
 
-		sf::Texture imageSource;
-		if (!imageSource.loadFromFile("graphics/razor.PNG"))
-			return EXIT_FAILURE;
-		sf::Sprite imageSprite;
-		imageSprite.setTexture(imageSource);
+			 sf::Texture imageSource;
+			 if (!imageSource.loadFromFile("graphics/lying.PNG"))
+				 return EXIT_FAILURE;
+			 sf::Sprite imageSprite;
+			 imageSprite.setTexture(imageSource);
 
-		while (window.isOpen())
-		{
-			sf::Event event;
-			while (window.pollEvent(event))
-			{
-
-
-			}
-
-			window.draw(imageSprite);
-			window.display();
-		}
-		return EXIT_SUCCESS;
-	}
-	else if (Face = size(PigFace[2]))
-	{
-		PlayerScore = PlayerScore + 5;
-		cout << "You get 5 points\n";
-		cout << "Your Score is " << PlayerScore << endl;
-		sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
+			 while (window.isOpen())
+			 {
+				 sf::Event event;
+				 while (window.pollEvent(event))
+				 {
 
 
-		sf::Texture imageSource;
-		if (!imageSource.loadFromFile("graphics/pig test.jpg"))
-			return EXIT_FAILURE;
-		sf::Sprite imageSprite;
-		imageSprite.setTexture(imageSource);
+				 }
 
-		while (window.isOpen())
-		{
-			sf::Event event;
-			while (window.pollEvent(event))
-			{
-
-
-			}
-
-			window.draw(imageSprite);
-			window.display();
-		}
-		return EXIT_SUCCESS;
-	}
-	else if (Face = size(PigFace[3]))
-	{
-		PlayerScore = PlayerScore + 10;
-		cout << "You get 10 points\n";
-		cout << "Your Score is " << PlayerScore << endl;
-		sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
+				 window.draw(imageSprite);
+				 window.display();
+			 }
+			 return EXIT_SUCCESS;
+		 }
+		 else if (Face = size(PigFace[1]))
+		 {
+			 PlayerScore = PlayerScore + 5;
+			 cout << "You get 5 points\n";
+			 cout << "Your Score is " << PlayerScore << endl;
+			 sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
 
 
-		sf::Texture imageSource;
-		if (!imageSource.loadFromFile("graphics/snouter.PNG"))
-			return EXIT_FAILURE;
-		sf::Sprite imageSprite;
-		imageSprite.setTexture(imageSource);
+			 sf::Texture imageSource;
+			 if (!imageSource.loadFromFile("graphics/razor.PNG"))
+				 return EXIT_FAILURE;
+			 sf::Sprite imageSprite;
+			 imageSprite.setTexture(imageSource);
 
-		while (window.isOpen())
-		{
-			sf::Event event;
-			while (window.pollEvent(event))
-			{
-
-
-			}
-
-			window.draw(imageSprite);
-			window.display();
-		}
-		return EXIT_SUCCESS;
-	}
-
-	else if (Face = size(PigFace[4]))
-	{
-		PlayerScore = PlayerScore + 15;
-		cout << "You get 15 points\n";
-		cout << "Your Score is " << PlayerScore << endl;
-		sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
+			 while (window.isOpen())
+			 {
+				 sf::Event event;
+				 while (window.pollEvent(event))
+				 {
 
 
-		sf::Texture imageSource;
-		if (!imageSource.loadFromFile("graphics/leaning.PNG"))
-			return EXIT_FAILURE;
-		sf::Sprite imageSprite;
-		imageSprite.setTexture(imageSource);
+				 }
 
-		while (window.isOpen())
-		{
-			sf::Event event;
-			while (window.pollEvent(event))
-			{
-
-
-			}
-
-			window.draw(imageSprite);
-			window.display();
-		}
-		return EXIT_SUCCESS;
-
-	}
+				 window.draw(imageSprite);
+				 window.display();
+			 }
+			 return EXIT_SUCCESS;
+		 }
+		 else if (Face = size(PigFace[2]))
+		 {
+			 PlayerScore = PlayerScore + 5;
+			 cout << "You get 5 points\n";
+			 cout << "Your Score is " << PlayerScore << endl;
+			 sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
 
 
+			 sf::Texture imageSource;
+			 if (!imageSource.loadFromFile("graphics/pig test.jpg"))
+				 return EXIT_FAILURE;
+			 sf::Sprite imageSprite;
+			 imageSprite.setTexture(imageSource);
+
+			 while (window.isOpen())
+			 {
+				 sf::Event event;
+				 while (window.pollEvent(event))
+				 {
+
+
+				 }
+
+				 window.draw(imageSprite);
+				 window.display();
+			 }
+			 return EXIT_SUCCESS;
+		 }
+		 else if (Face = size(PigFace[3]))
+		 {
+			 PlayerScore = PlayerScore + 10;
+			 cout << "You get 10 points\n";
+			 cout << "Your Score is " << PlayerScore << endl;
+			 sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
+
+
+			 sf::Texture imageSource;
+			 if (!imageSource.loadFromFile("graphics/snouter.PNG"))
+				 return EXIT_FAILURE;
+			 sf::Sprite imageSprite;
+			 imageSprite.setTexture(imageSource);
+
+			 while (window.isOpen())
+			 {
+				 sf::Event event;
+				 while (window.pollEvent(event))
+				 {
+
+
+				 }
+
+				 window.draw(imageSprite);
+				 window.display();
+			 }
+			 return EXIT_SUCCESS;
+		 }
+
+		 else if (Face = size(PigFace[4]))
+		 {
+			 PlayerScore = PlayerScore + 15;
+			 cout << "You get 15 points\n";
+			 cout << "Your Score is " << PlayerScore << endl;
+			 sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
+
+
+			 sf::Texture imageSource;
+			 if (!imageSource.loadFromFile("graphics/leaning.PNG"))
+				 return EXIT_FAILURE;
+			 sf::Sprite imageSprite;
+			 imageSprite.setTexture(imageSource);
+
+			 while (window.isOpen())
+			 {
+				 sf::Event event;
+				 while (window.pollEvent(event))
+				 {
+
+
+				 }
+
+				 window.draw(imageSprite);
+				 window.display();
+			 }
+			 return EXIT_SUCCESS;
+
+		 }
+
+	 }while (PlayerScore == 35);
 
 
 
