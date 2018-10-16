@@ -38,7 +38,7 @@ int Score()
 	int score[5] = { 0,5,5,10,15 };
 	int Face;
 	int userChoice2;
-	/*int userChoice;*/
+	int userChoice;
 	int randomNum;
 	int choice;
 	int compNum;
@@ -48,23 +48,15 @@ int Score()
 	string snouter;
 	string leaningJowle;
 	string PigFace[5] = { lyingPig, razorBack ,trotter ,snouter ,leaningJowle };
-	
+	string piggie;
 
-	/*srand(time(NULL));
-	PigFace[5] = rand() % 6 + 1;*/ 
-	
-	/*if (userChoice == 1)
-	{
-		cout << "Are you ready? 1 for Yes 2 for No ";
+		srand(time(NULL));
+		piggie = PigFace[rand() % 4];
+
+
+
+		cout << "Are you ready to roll the dice? 1 for yes and 2 for no" << endl;
 		cin >> userChoice2;
-	}
-	else if (userChoice == 2)
-	{
-		cout << "Not ready yet go away" << endl;
-	}*/
-	
-	cout << "Are you ready to roll the dice? 1 for yes and 2 for no" << endl;
-	cin >> userChoice2;
 	
 	
 	if (userChoice2 == 1)
@@ -72,7 +64,8 @@ int Score()
 		cout << "Press 1 to roll dice: ";
 		cin >> userChoice2;
 	}
-	else {
+	else 
+	{
 		cout << "go away for now this isnt finished" << endl;
 	}
 	
@@ -271,6 +264,6 @@ int main()
 
 
 	system("pause");
-	
+	return 0;
 
 }
