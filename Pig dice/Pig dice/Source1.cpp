@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-int display()
+int displayexample()
 {
 	sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
 	
