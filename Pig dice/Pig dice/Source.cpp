@@ -12,7 +12,7 @@ int CompScore = 0;
 	 
 	 
 int PlayerPoints()
-{
+{// players points/ pig position 
 		int lyingPig = 0;
 		int razorBack = 5;
 		int trotter = 5;
@@ -194,7 +194,7 @@ int PlayerPoints()
 }
 
 int CompPoint()
-{
+{// Computers points/Pig position
 	int lyingPig = 0;
 	int razorBack = 5;
 	int trotter = 5;
@@ -212,7 +212,7 @@ int CompPoint()
 
 	
 	randPiggie = rand() % 4;
-
+	// random number gen
 	cout << "Computers pig position is: " << PigFace[randPiggie] << endl;
 
 	if (randPiggie == 0)
@@ -223,7 +223,7 @@ int CompPoint()
 
 
 		sf::RenderWindow window(sf::VideoMode(300, 200, 32), "SFML");
-
+		// this loads the picture 
 
 		sf::Texture imageSource;
 		if (!imageSource.loadFromFile("graphics/lying.PNG"))
@@ -391,7 +391,7 @@ int main()
 
 		cout << "Are you ready to roll the dice? 1 for yes and 2 for no" << endl;
 	 cin >> userChoice2;
-
+	 // starts the game off with who goes first by a roll of dice
 	 if (userChoice2 == 1)
 	 {
 		 cout << "Press 1 to roll dice: ";
@@ -427,7 +427,7 @@ int main()
 		 cout << "Do you want to quit? 1 for yes 2 for no" << endl;
 		 cin >> quit;
 	 } while (quit != 1);
-	 
+	 // asks the user if they would like to quit or not
 
 
 	system("pause");
