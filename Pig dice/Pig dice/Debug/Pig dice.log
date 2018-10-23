@@ -1,5 +1,6 @@
 ﻿  Source.cpp
-c:\users\kg154824\desktop\pig\pig dice\pig dice\source.cpp(102): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\kg154824\desktop\pig\pig dice\pig dice\source.cpp(292): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\kg154824\desktop\pig\pig dice\pig dice\source.cpp(273): warning C4101: 'choice': unreferenced local variable
+c:\users\kg154824\desktop\pig\pig dice\pig dice\source.cpp(26): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\kg154824\desktop\pig\pig dice\pig dice\source.cpp(208): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\kg154824\desktop\pig\pig dice\pig dice\source.cpp(407): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\kg154824\desktop\pig\pig dice\pig dice\source.cpp(385): warning C4101: 'choice': unreferenced local variable
   Pig dice.vcxproj -> C:\Users\kg154824\Desktop\Pig\Pig dice\Debug\Pig dice.exe
